@@ -64,7 +64,7 @@ body {
 .hero { 
     height: 300px;
     margin: 0px;
-    background-image: url("image1.jpg");
+    background-image: url("./Assets/image1.jpg");
     background-position: 100%;
 }
 /*--MAIN SECTION*/
