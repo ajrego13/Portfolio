@@ -1,7 +1,7 @@
 body {
     margin: 2px;
     padding: 0px;
-    font-family: sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
 /*--NAVBAR--*/ 
@@ -64,38 +64,40 @@ body {
 .hero { 
     height: 300px;
     width: 100%;
-    margin: 2px;
-    background-image: url("./Assets/image1.jpg");
-    background-position: 100%;
+    margin: 0px;
+    padding: 0PX;
+    font-size: 25px;
+    text-align: center;
+    background: url(./Assets/backgroundimg.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 /*--MAIN SECTION*/
 
 .main_section {
-    height: 1000px;
+    height: auto;
     width: 100%;
-    margin: 2px;
+    margin: 0px;
     padding: 0px;
-   
- 
-}
-.main_content {
-    height: 1000;
-    width: 100%;
-    background-color: lightgray;
-    border: 1px solid black;
-     display: grid;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; 
 }
 
-.project_1 {
-    height: 200px; 
-    width: 200px;
-    background-image: url("./Assets/img2.jpg");
-    
-    grid-column-start: 1;  
-    grid-column-end: 3;  
+.container1 {
+    margin: 20px;
+}
+
+.project1 {
    
+}
+
+.container2 {
+    margin: 20px;
+}
+
+.project2 {
     
 }
 .project_2 {
@@ -105,26 +107,23 @@ body {
     margin: 30px;
     background-image: url("./Assets/img3.png");
     background-size: cover;
-    
-
-}
-.project_3 {
-    height: 200px; 
-    width: 200px;
-    background-image: url("./Assets/img4.jpg");
-    background-position: 100%;
-    
-   
-}
-.project_4 {
-    height: 200px; 
-    width: 200px;
-    background-image: url("./Assets/img5.jpg");
-    background-position: 100%;
-  
 }
 
+.container3 {
+    margin: 20px;
+}
 
+.project3 {
+
+}
+
+.container4 {
+    margin: 20px;
+}
+
+.project4 {
+    margin: 20px;
+}
 /*--FOOTER--*/
 
 .contact {
@@ -140,11 +139,11 @@ body {
     margin: 2px;
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    font-size: 50px;
+    font-size: 20px;
 }
 
 .contacts {
-    flex: 3;
+    
 }
