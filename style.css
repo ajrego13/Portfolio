@@ -53,6 +53,11 @@ body {
     align-items: center;
 }
 
+.link1 {
+    text-decoration: none;
+    color: lightblue;
+}
+
  
 .links:hover {
     color: rgba(184, 184, 178, 0.473);
@@ -72,57 +77,78 @@ body {
     background-size: cover;
 }
 /*--MAIN SECTION*/
-
-.main_section {
-    height: auto;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
+.projects {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap; 
+    height: 100%;
+    padding: 10rem 0;    
 }
 
-.container1 {
-    margin: 20px;
+.projects h1 {
+    background-size: 100%;
+    margin: 5rem;
+    font-size: 2.5rem;
 }
 
-.project1 {
-   
+.projects_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
-.container2 {
-    margin: 20px;
-}
-
-.project2 {
-    
-}
-.project_2 {
-    height: 200; 
-    width: 400%;
-    padding: 10px;
-    margin: 30px;
-    background-image: url("./Assets/img3.png");
-    background-size: cover;
-}
-
-.container3 {
-    margin: 20px;
-}
-
-.project3 {
+.projects_card {
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in;
+  
 
 }
 
-.container4 {
-    margin: 20px;
+#pro1 {
+    background-image: url(./Assets/img2.jpg);
 }
 
-.project4 {
-    margin: 20px;
+#pro2 {
+    background-image: url(./Assets/img3.png); 
+}
+
+#pro3 {
+    background-image: url(./Assets/img6.jpg);
+}
+#pro4 {
+    background-image: url(./Assets/img5.jpg)
+}
+.projects_card h2 {
+    text-align: center;
+}
+
+.projects_card p {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+.projects_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.projects_btn button {
+    padding: 14px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: #fff;
 }
 /*--FOOTER--*/
 
