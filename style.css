@@ -66,18 +66,53 @@ body {
 
 /*HERO SECTION*/
 
-.hero { 
-    height: 300px;
-    width: 100%;
-    margin: 0px;
-    padding: 0PX;
-    font-size: 25px;
-    text-align: center;
-    background: url(./Assets/backgroundimg.jpg) no-repeat center center fixed;
-    background-size: cover;
+.hero {
+    background-color: black;
+    padding: 200px; 
+    
 }
+
+.hero_container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero_heading {
+    font-size: 100px;
+    margin-bottom: 24px;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.hero_description {
+    font-size: 60px;
+    background-size: 100%;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #a9f378, #af428b);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+
 /*--MAIN SECTION*/
 .projects {
+    background-color: rgba(0, 0, 0, 0.990);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,6 +125,13 @@ body {
     background-size: 100%;
     margin: 5rem;
     font-size: 2.5rem;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 }
 
 .projects_wrapper {
@@ -100,42 +142,55 @@ body {
 
 .projects_card {
     margin: 10px;
-    height: 425px;
-    width: 300px;
+    height: 400px;
+    width: 325px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: 0.3s ease-in;
-  
-
 }
 
 #pro1 {
-    background-image: url(./Assets/img2.jpg);
+   background-image: url(./Assets/img2.jpg);
+   background-repeat: no-repeat;
+   object-fit: cover;
+
 }
 
 #pro2 {
-    background-image: url(./Assets/img3.png); 
+    background-image: url(./Assets/img4.jpg); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
-
 #pro3 {
     background-image: url(./Assets/img6.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 #pro4 {
-    background-image: url(./Assets/img5.jpg)
+    background-image: url(./Assets/img5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .projects_card h2 {
     text-align: center;
+    background-color: #f3ec78;
+    background: hsla(221, 45%, 73%, 1);
+    background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ 
 }
 
 .projects_card p {
     text-align: center;
     margin-top: 24px;
-    font-size: 20px;
+    font-size: 30px;
+    color: black; 
 }
-
 .projects_btn {
     display: flex;
     justify-content: center;
@@ -149,7 +204,10 @@ body {
     border-radius: 4px;
     font-size: 1rem;
     background: #fff;
+    color: black;
+    font-size: 25px;
 }
+
 /*--FOOTER--*/
 
 .contact {
