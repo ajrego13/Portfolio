@@ -6,23 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
 </head>
 <body> 
     
 <!--NAVBAR-->
-    <header class="nav_bar_container">
-        <nav class="nav_bar">
-            <div class="logo">ALEX REGO</div>
-            <ul class="nav_links">
-                <li class="links"><a>About Me</a></li>
-                <li class="links"><a class="link1" href="#projects">Work</a></li>
-                <li class="links"><a>Contact Me</a></li>
-                <li class="links"><a>Resume</a></li>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a class="logo" href="#">Alex Rego</a>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="#" class="navbar_link">About</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#" class="navbar_link">Work</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#" class="navbar_link">Contact Me</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#" class="navbar_link">Resume</a>
+                </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 <!--HERO SECTION-->
     <div class="hero">
         <div class="hero_container">
@@ -41,7 +50,7 @@
             <h2>Project 1</h2>
             <p>HTML, CSS</p>
             <div class="projects_btn">
-                <button>EXPLORE</button>
+                <button class="button">EXPLORE</button>
             </div>
         </div>
         <!--card2-->
@@ -49,7 +58,7 @@
             <h2>Project 2</h2>
             <p>JAVASCRIPT</p>
             <div class="projects_btn">
-                <button>EXPLORE</button>
+                <button class="button">EXPLORE</button>
             </div>
         </div>
         <!--card3-->
@@ -57,7 +66,7 @@
             <h2>Project 3</h2>
             <p>React</p>
             <div class="projects_btn">
-                <button>EXPLORE</button>
+                <button class="button">EXPLORE</button>
             </div>
         </div>
          <!--card4-->
@@ -65,22 +74,31 @@
             <h2>Project 4</h2>
             <p>TypeScript</p>
             <div class="projects_btn">
-                <button>EXPLORE</button>
+                <button class="button">EXPLORE</button>
             </div>
         </div>
     </div>
 </div>
 <!--FOOTER-->
-<footer class="contact">
-    <aside class="footer_sidebar">
-        CONTACT
-        Email: ajrego13@gmail.com
-        phone: 603-553-2221
-    </aside>
-    <div class="contacts">
-        
+<div class="footer_container">
+    <div class="footer_links">
+        <div class="footer_link--wrapper">
+            <div class="footer_link--items">
+                <h2>Contact</h2>
+                <a href="">Email: ajrego13@gmail.com</a>
+                <a href="">Phone: 603-553-2221</a>
+            </div>
+        </div>
+        <div class="footer_link--wrapper" id="contact">
+            <div class="footer_link--items">
+                <h2>Social Media</h2>
+                <a href="">Linkedin</a>
+                <a href="">Resume</a>
+            </div>
+        </div>
     </div>
-</footer>
+    <section class="copywrite">all rights reserved @ 2021</section>
+</div>
 
 </body>
 </html>
