@@ -152,26 +152,26 @@
 }
 
 .cardImage1 {
-    background: url(/portfolio/img3.jpg);
+    background-image: url(/Assets/img1.jpg);
     background-size: cover;
     background-position: center center;
     border-radius: 10px 10px 0px 0px;
 }
 
 .cardImage2 {
-    background: url(/portfolio/Assets/photos/img2.jpg);
+    
     background-size: cover;
     background-position: center center;
     border-radius: 10px 10px 0px 0px;
 }
 .cardImage3 {
-    background: url(/portfolio/Assets/photos/img3.jpg);
+    
     background-size: cover;
     background-position: center center;
     border-radius: 10px 10px 0px 0px;
 }
 .cardImage4 {
-    background: url(/portfolio/Assets/photos/img4.jpg);
+    
     background-size: cover;
     background-position: center center;
     border-radius: 10px 10px 0px 0px;
