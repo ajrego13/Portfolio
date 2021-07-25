@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Noto Sans JP', sans-serif;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 /*--NAVBAR--*/ 
@@ -33,7 +34,10 @@
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 5rem;
+    font-family: 'Fuggles', cursive;
+    font-family: 'Patrick Hand', cursive;
+    font-family: 'Zen Loop', cursive;
 }
 
 .navbar_menu {  
@@ -110,8 +114,9 @@
 
 
 /*--MAIN SECTION*/
+
 .projects {
-    background-color: rgba(0, 0, 0, 0.990);
+    background-color: #131313fb;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,82 +132,92 @@
     color: white; 
 }
 
-.projects_wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+.card_container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
 }
 
-.projects_card {
-    margin: 10px;
-    height: 400px;
-    width: 325px;
-    border-radius: 4px;
+.card {
+    display: grid;
+    grid-template-columns: 250px; 
+    grid-template-rows: 200px 120px 60px;
+    grid-template-areas: "image" "text" "button";
+    margin: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+}
+
+.cardImage1{
+    background: url(./Assets/img1.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cardImage2{
+    background: url(./Assets/img2.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px 10px 0px 0px;
+}
+.cardImage3 {
+    background: url(./Assets/img3.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px 10px 0px 0px;
+}
+.cardImage4{
+    background: url(./Assets/img4.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px 10px 0px 0px;
+}
+.cardtext {
+    grid-area: text;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.cardText h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.cardText p {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.card_btn {
+    display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.3s ease-in;
 }
-
-#pro1 {
-   background-image: url(./Assets/img2.jpg);
-   background-repeat: no-repeat;
-   object-fit: cover;
-
-}
-
-#pro2 {
-    background-image: url(./Assets/img4.jpg); 
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-#pro3 {
-    background-image: url(./Assets/img6.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-#pro4 {
-    background-image: url(./Assets/img5.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.projects_card h2 {
-    text-align: center;
-    font-size: 50px;
-    font-weight: bolder;
-    color: black; ;
- 
-}
-
-.projects_card p {
-    text-align: center;
-    margin-top: 24px;
-    font-size: 30px;
-    font-weight: bold;
-    color: black; 
-}
-.projects_btn {
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
-}
-
 .button {
-    padding: 14px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    font-size: 2rem;
-    background: #fff;
-    color: black;
-    font-size: 25px;
+    grid-area: button;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
-.button:hover {
-    background-color: #9518fc;
-    transition: 0.3 ease-in;
+.button a{
+    text-decoration: none;
 }
+
+.card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+
 
 /*--FOOTER--*/
 .footer_container {
@@ -249,3 +264,7 @@
     align-items: center;
 }
 
+#cardTitle {
+    color: #131313;
+    font-weight: bolder;
+}
