@@ -152,26 +152,26 @@
 }
 
 .cardImage1 {
-    background: url(/Assets/CSS/photos/img1.jpg);
+    background: url(./img1.jpg);
     background-size: cover;
     background-position: center center;
     border-radius: 10px 10px 0px 0px;
 }
 
 .cardImage2 {
-    
+    background: url(./img2.jpg);
     background-size: cover;
     background-position: center center;
     border-radius: 10px 10px 0px 0px;
 }
 .cardImage3 {
-    
+    background: url(./img3.png);
     background-size: cover;
     background-position: center center;
     border-radius: 10px 10px 0px 0px;
 }
 .cardImage4 {
-    
+    background: url(./img4.jpg);
     background-size: cover;
     background-position: center center;
     border-radius: 10px 10px 0px 0px;
