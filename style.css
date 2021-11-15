@@ -176,26 +176,26 @@
 }
 
 .cardImage1 {
-    background: url(./img1.jpg);
+    background: url(./proejct1.png);
     background-size: cover;
     background-position: center center;
     border-radius: 10px 10px 0px 0px;
 }
 
 .cardImage2 {
-    background: url(./img2.jpg);
+    background: url(./project2.png);
     background-size: cover;
     background-position: center center;
     border-radius: 10px 10px 0px 0px;
 }
 .cardImage3 {
-    background: url(./img3.png);
+    background: url(./projecr3.png);
     background-size: cover;
-    background-position: center center;
+    background-position: left;
     border-radius: 10px 10px 0px 0px;
 }
 .cardImage4 {
-    background: url(./img4.jpg);
+    background: url(./project4.png);
     background-size: cover;
     background-position: center center;
     border-radius: 10px 10px 0px 0px;
